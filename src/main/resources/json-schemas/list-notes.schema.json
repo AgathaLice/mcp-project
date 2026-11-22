@@ -1,0 +1,9 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "classpath:/json-schemas/list-notes.schema.json",
+   "title": "Lista as notas",
+   "description": "Lista todas as notas (sem argumentos)",
+   "type": "object",
+   "properties": {},
+   "additionalProperties": false
+}

@@ -1,0 +1,11 @@
+# Saída do Maven
+target/
+
+# Eclipse (é recriado por File > Import > Existing Maven Projects)
+.project
+.classpath
+.settings/
+bin/
+
+# bancos de dados locais criados nos testes
+*.db

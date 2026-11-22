@@ -1,0 +1,15 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "classpath:/json-schemas/get-note.schema.json",
+   "title": "Encontra uma nota",
+   "description": "Retorna uma nota",
+   "type": "object",
+   "properties": {
+      "id": {
+         "type": "integer",
+         "description": "ID da nota"
+      }
+   },
+   "required": [ "id" ],
+   "additionalProperties": false
+}

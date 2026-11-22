@@ -1,0 +1,19 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "classpath:/json-schemas/add-note.schema.json",
+   "title": "Adiciona uma nota",
+   "description": "Cria uma nova nota",
+   "type": "object",
+   "properties": {
+      "titulo": {
+         "type": "string",
+         "description": "Titulo da nota (1 ate 100 caracteres)"
+      },
+      "texto": {
+         "type": "string",
+         "description": "Texto da nota (1 ate 2000 caracteres)"
+      }
+   },
+   "required": [ "titulo", "texto" ],
+   "additionalProperties": false
+}

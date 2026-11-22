@@ -1,0 +1,23 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "classpath:/json-schemas/update-note.schema.json",
+   "title": "Atualiza uma nota",
+   "description": "Modifica o titulo e/ou o texto da nota",
+   "type": "object",
+   "properties": {
+      "id": {
+         "type": "integer",
+         "description": "ID da nota a ser modificada"
+      },
+      "titulo": {
+         "type": "string",
+         "description": "Novo titulo (opcional, 1 ate 100 caracteres)"
+      },
+      "texto": {
+         "type": "string",
+         "description": "Novo texto (opcional, 1 ate 2000 caracteres)"
+      }
+   },
+   "required": [ "id" ],
+   "additionalProperties": false
+}

@@ -1,0 +1,20 @@
+<configuration>
+   <!--
+   Os logs TEM que ir pro System.err. Com o STDIO transport, qualquer coisa
+   escrita no System.out quebra o protocolo JSON-RPC entre client e server.
+   -->
+
+   <appender name="STDERR" class="ch.qos.logback.core.ConsoleAppender">
+      <target>System.err</target>
+      <encoder>
+         <charset>UTF-8</charset>
+         <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+      </encoder>
+   </appender>
+
+   <root level="INFO">
+      <appender-ref ref="STDERR" />
+   </root>
+
+   <logger name="br.edu.ifpr.mcp_notes" level="DEBUG" />
+</configuration>

@@ -1,0 +1,15 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "classpath:/json-schemas/delete-note.schema.json",
+   "title": "Exclui uma nota",
+   "description": "Permanentemente exclui uma nota",
+   "type": "object",
+   "properties": {
+      "id": {
+         "type": "integer",
+         "description": "ID da nota para excluir"
+      }
+   },
+   "required": [ "id" ],
+   "additionalProperties": false
+}
